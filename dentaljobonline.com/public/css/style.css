@@ -1,0 +1,708 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins-Regular' !important;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: .6px;
+    color: #212529;
+    text-align: left;
+}
+
+@font-face {
+    font-family: 'Poppins-Regular';
+    src: url('../fonts/Poppins-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+@font-face {
+    font-family: 'Poppins-Medium';
+    src: url('../fonts/Poppins-Bold.ttf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+@font-face {
+    font-family: 'Poppins-Bold';
+    src: url('../fonts/Poppins-Bold.ttf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+@font-face {
+    font-family: 'Poppins-ExtraBold';
+    src: url('../fonts/Poppins-ExtraBold.ttf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-paper-plane:before {
+    content: "\e907";
+}
+
+.icon-commenting:before {
+    content: "\e904";
+}
+
+.icon-search:before {
+    content: "\e903";
+}
+
+.icon-caret-up:before {
+    content: "\e900";
+}
+
+.icon-thumbs-up:before {
+    content: "\e901";
+}
+
+.icon-sort-desc:before {
+    content: "\e902";
+}
+
+.icon-sort-down:before {
+    content: "\e902";
+}
+
+.icon-map:before {
+    content: "\e905";
+}
+
+.icon-location1:before {
+    content: "\e905";
+}
+
+.icon-office:before {
+    content: "\e906";
+}
+
+.icon-bullhorn:before {
+    content: "\e91a";
+}
+
+.icon-price-tag:before {
+    content: "\e935";
+}
+
+.icon-location:before {
+    content: "\e947";
+}
+
+.icon-location2:before {
+    content: "\e948";
+}
+
+.icon-clock2:before {
+    content: "\e94f";
+}
+
+.icon-display:before {
+    content: "\e956";
+}
+
+.icon-mobile:before {
+    content: "\e958";
+}
+
+.icon-equalizer:before {
+    content: "\e992";
+}
+
+.icon-list2:before {
+    content: "\e9bb";
+}
+
+.icon-eye:before {
+    content: "\e9ce";
+}
+
+.icon-star-empty:before {
+    content: "\e9d7";
+}
+
+.icon-star-half:before {
+    content: "\e9d8";
+}
+
+.icon-star-full:before {
+    content: "\e9d9";
+}
+
+.icon-play3:before {
+    content: "\ea1c";
+}
+
+.icon-facebook:before {
+    content: "\ea90";
+}
+
+.icon-instagram:before {
+    content: "\ea92";
+}
+
+.icon-twitter:before {
+    content: "\ea96";
+}
+
+.poppin-regular {
+    font-family: 'Poppins-Regular';
+}
+
+.poppin-medium {
+    font-family: 'Poppins-Medium';
+}
+
+.poppin-bold {
+    font-family: 'Poppins-Bold';
+}
+
+.poppin-extrabold {
+    font-family: 'Poppins-ExtraBold';
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    line-height: 1.2;
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+img {
+    width: 100%;
+}
+
+.text-blue {
+    color: #00aeef
+}
+
+.bg-green {
+    color: #39b54a;
+    color: #fff;
+}
+
+.bg-blue {
+    background-color: #00aeef;
+    color: #fff;
+}
+
+.d-btn {
+    padding: 10px 15px;
+    border: none;
+    font-size: 20px;
+    border-radius: 30px;
+    outline: 0;
+}
+
+.d-btn:hover {
+    background-color: #39b54a;
+    transition: .1s all ease-in-out;
+}
+
+.d-btn:focus {
+    outline: 0;
+}
+
+.bdr-btm {
+    border-bottom: 1px solid #e8e8e8;
+}
+
+
+/* ===========================top header=========================== */
+
+.ads-box {
+    padding-bottom: 20px;
+}
+
+
+/* ==========================navbar start ====================== */
+
+.bg-green {
+    background-color: #78cd84
+}
+
+.navbar-brand {
+    border-right: 1px solid #fff;
+    padding-right: 10px
+}
+
+.navbar-brand .fa-home:before {
+    color: #fff;
+    font-size: 30px;
+}
+
+.navbar {
+    position: relative;
+    font-family: 'Poppins-Regular';
+    font-weight: 600;
+    text-transform: capitalize;
+    z-index: 1000;
+}
+
+.navbar .nav-item .nav-link {
+    color: #fff;
+    font-weight: 300;
+}
+
+.navbar-nav .nav-link {
+    padding: 10px 25px !important;
+}
+
+.nav-bar .navbar-nav .nav-link,
+.nav-bar .navbar-nav .active>.nav-link,
+.nav-bar .navbar-nav .nav-link.show,
+.nav-bar .navbar-nav .nav-link.active {
+    font-size: 15px;
+}
+
+.nav-bar .navbar-nav .nav-link:hover {
+    transition: all .3s ease-in-out;
+    color: #39b54a;
+}
+
+.navbar-dark .navbar-toggler {
+    color: rgba(255, 255, 255, 1);
+    border-color: rgba(255, 255, 255, 1);
+}
+
+.navbar-light .navbar-nav .active>.nav-link {
+    color: #fff;
+}
+
+
+/* ==========================navbar ends ====================== */
+
+
+/* ======================= upload asset start===================== */
+
+.ads-job-section {
+    border: 1px solid #000;
+    border-radius: 30px;
+}
+
+.ads-tittle {
+    padding: 15px;
+}
+
+.ads-tittle h6 {
+    font-weight: 600;
+    font-family: 24px;
+    color: #707070;
+}
+
+.ads-asset-upload {
+    background-color: #f4f2f2;
+    border-radius: 30px;
+    padding: 10px 50px
+}
+
+.media .pointer-icon {
+    width: 50px;
+}
+
+.ads-asset-upload .media-body h4 {
+    margin: 0;
+}
+
+.ads-asset-upload input {
+    position: relative;
+    outline: none;
+}
+
+.ads-asset-upload input::after {
+    content: 'Upload your Resume Here';
+    text-decoration: underline;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 1px 25px 10px 0;
+    background-color: #f4f2f2;
+    color: #00aeef;
+}
+
+
+/* ============================ search form==================== */
+
+.search-form .share-like-box .fa {
+    background-color: #1a76f2;
+    color: #fff;
+    padding: 8px 15px;
+    border-radius: 5px;
+    margin: 0 20px;
+}
+
+.search-form .share-like-box .fa-thumbs-up::before,
+.search-form .share-like-box .fa-share::before {
+    margin-right: 10px;
+}
+
+.search-form .share-like-box label {
+    letter-spacing: 1px;
+    margin-bottom: 0;
+}
+
+.search-form .icon-search:before {
+    margin-right: 30px;
+}
+
+.search-form h2 img {
+    width: 30px;
+}
+
+.search-form .form-control {
+    border: 1px solid #39b54a;
+    padding: 25px;
+    border-radius: 30px;
+}
+
+.search-form .from-group button {
+    width: 100%;
+}
+
+
+/* =============================job list================ */
+
+.job-section .img-box {
+    width: 50px;
+    margin: 0 auto;
+    display: inline-block;
+}
+
+.job-section span.jobs-text {
+    font-size: 30px;
+    vertical-align: middle;
+}
+
+.job-box {
+    border-bottom: 1px solid #e8e8e8;
+    padding-bottom: 10px;
+}
+
+.p-date {
+    color: #39b54a;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.job-section .pagination-box .page-link {
+    background-color: #78cd84;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+}
+
+.job-section .page-item.active .page-link {
+    background-color: #78b580;
+}
+
+.job-section .page-item:first-child .page-link {
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+.job-section .page-item:last-child .page-link {
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.job-section button {
+    margin-left: 40px;
+    letter-spacing: 1px;
+    font-size: 16px;
+}
+
+.job-detail-box ul li {
+    list-style-type: disc;
+}
+
+.job-detail-box ul li::marker {
+    color: #39b54a;
+    font-size: 25px;
+}
+
+.job-detail-box ul li strong {
+    display: inline-block;
+    min-width: 200px;
+}
+
+
+/* ================footer============================ */
+
+footer {
+    background-color: #707070;
+    color: #fff;
+}
+
+footer ul.link-list li,
+footer ul.social-list li {
+    list-style: none;
+    line-height: 2;
+}
+
+footer ul.link-list li a,
+footer ul.social-list li a {
+    text-decoration: none;
+    color: #fff
+}
+
+footer h5 {
+    font-size: 25px;
+    text-transform: capitalize;
+}
+
+footer ul.social-list li {
+    display: inline-block;
+}
+
+footer ul.link-list li a:hover,
+footer ul.social-list li a:hover {
+    color: #000;
+}
+
+.social-list .icon-facebook:before,
+.social-list .icon-twitter:before,
+.social-list .icon-instagram:before,
+.social-list .fa-linkedin:before,
+.social-list .fa-youtube-play:before {
+    display: inline;
+    margin: 0 5px;
+    background-color: #929292;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+
+/* ======================= top up====================== */
+
+#back-to-top span.icon-caret-up:before {
+    z-index: 1001;
+    color: #fff;
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+div#back-to-top {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 90px;
+    right: 30px;
+    display: none;
+    border-radius: 50%;
+    outline: none !important;
+    background-repeat: no-repeat;
+    z-index: 1000;
+    background-color: #39b54a;
+}
+
+
+/* ===========================inner page ============================ */
+
+
+/* =========================login page============================== */
+
+.login-form .form-box,
+.registeration-form .form-box,
+.student-registeration-form .form-box,
+.job-detail-box {
+    margin: 0 auto;
+    border: 2px solid #39b54a;
+    padding: 20px 30px;
+    box-shadow: inset 0px 0px 10px rgb(95, 95, 95, .4);
+    border-radius: 30px;
+    background-color: #eff5f0;
+}
+
+.login-form .form-box .form-control {
+    border: 1px solid #39b54a;
+    border-radius: 30px;
+}
+
+.form-box .from-group button {
+    padding: 5px 40px;
+    font-size: 14px;
+}
+
+.form-box .from-group p a {
+    text-decoration: underline;
+    margin-top: 10px;
+    color: #000;
+}
+
+.form-box .from-group p a:hover {
+    color: #39b54a;
+}
+
+.dont-have-acc {
+    background-color: #77cae7;
+    padding: 15px 40px;
+    margin: 0 auto;
+    border-radius: 30px;
+    margin-top: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.dont-have-acc button {
+    font-size: 14px;
+    padding: 10px 30px;
+}
+
+.terms-condition input {
+    width: 5%;
+    vertical-align: top;
+}
+
+.terms-condition label {
+    width: 90%;
+}
+
+.login-form p {
+    font-weight: 12px;
+}
+
+
+/* ===========================================================  */
+
+
+/* ==========Responisve class start here==================== */
+
+
+/* =========================================================== */
+
+@media (max-width: 768px) {
+    /* ==========================responsive nav ====================== */
+    .navbar-collapse {
+        position: absolute;
+        top: 86px;
+        left: 0;
+        padding-bottom: 15px;
+        width: 90%;
+        background: #fff;
+        border-top: 1px solid #fff;
+        box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
+        border-bottom-right-radius: 3px
+    }
+    .navbar-collapse.collapsing {
+        height: auto;
+        -webkit-transition: left 0.3s ease;
+        -o-transition: left 0.3s ease;
+        -moz-transition: left 0.3s ease;
+        transition: left 0.3s ease;
+        left: -100%;
+    }
+    .navbar-collapse.show {
+        left: 0;
+        -webkit-transition: left 0.3s ease-in;
+        -o-transition: left 0.3s ease-in;
+        -moz-transition: left 0.3s ease-in;
+        transition: left 0.3s ease-in;
+    }
+    .navbar-nav .nav-item:not(:first-child) .nav-link {
+        padding: 20px 15px;
+    }
+}
+
+@media (min-width: 768px) {
+    .ads-tittle {
+        padding: 50px;
+        width: 80%;
+    }
+    .job-box {
+        margin: 0 40px;
+    }
+    .job-section .pagination-box {
+        padding-left: 40px;
+    }
+    .login-form .form-box,
+    .registeration-form .form-box,
+    .student-registeration-form,
+    .job-detail-box {
+        width: 70%;
+        margin: 0 auto;
+    }
+    .dont-have-acc {
+        background-color: #77cae7;
+        padding: 15px 40px;
+        width: 50%;
+    }
+    .form-box .from-group button {
+        float: right;
+        clear: left;
+    }
+    .job-detail-box ul {
+        padding: 10px 30px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .nav-scroll {
+        position: fixed;
+        top: 0;
+        z-index: 1100;
+        width: 100%;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    }
+    .nav-bar ul li a.nav-link:hover a.nav-link:after {
+        transition: .3s ease;
+        background-color: #d8b404;
+        text-emphasis: none;
+    }
+}
+
+
+/* contact-page */
+
+.map-outer {
+    width: 100% !important;
+}
+
+iframe {
+    width: 100%;
+    height: 500px;
+    margin-bottom: -6px;
+}
